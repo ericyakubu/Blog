@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+@mixin container() {
+  padding: 1rem 2rem;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@mixin sectionTitle() {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: $titleFont;
+  color: $text_black;
+}
+
+@mixin btnArrow() {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: $mainFont;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 3rem;
+  color: white;
+  text-align: center;
+  border: 0.05rem solid white;
+  border-radius: 1.5rem;
+
+  svg {
+    margin-left: 0.5rem;
+  }
+}
+
+@mixin styleText($size, $weight, $family) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}

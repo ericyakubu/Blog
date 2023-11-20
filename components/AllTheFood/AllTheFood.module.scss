@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.section {
+  padding: 5rem 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.75fr 1fr 1fr 1fr;
+  background: $grey-bg;
+
+  h2 {
+    margin-top: 2rem;
+    // text-align: center;
+    @include styleText(3rem, 900, $titleFont);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    li {
+      font-family: $mainFont;
+      display: flex;
+      font-size: 1rem;
+      @include styleText(1rem, 200, $titleFont);
+
+      &:first-of-type {
+        @include styleText(1.25rem, 600, $secondaryFont);
+        color: $navy_bg;
+      }
+
+      a {
+        padding: 1rem 0;
+        background: $navy_bg;
+        text-align: center;
+        color: $text_white;
+        line-height: 1;
+        width: 100%;
+      }
+    }
+  }
+}

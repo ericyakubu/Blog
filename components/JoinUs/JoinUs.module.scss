@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: calc(100% - 4rem);
+  height: 30rem;
+  margin: 0 auto;
+  background-color: #4ea699;
+
+  .img {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 45rem;
+    max-width: 40%;
+
+    img {
+      width: 100%;
+      max-height: 90%;
+    }
+  }
+}
+
+.section_main {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  height: 100%;
+
+  width: 45rem;
+  max-width: 50%;
+
+  p {
+    &:first-of-type,
+    &:last-of-type {
+      margin-bottom: auto;
+    }
+  }
+
+  a {
+    @include btnArrow;
+  }
+}
+
+.section_title {
+  @include styleText(4rem, 900, $titleFont);
+  color: $text_white;
+
+  &__mini,
+  &__subtitle {
+    color: $text_lightBlue;
+  }
+
+  &__mini {
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: $titleFont;
+    margin-bottom: auto;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 1.4rem;
+    font-family: $mainFont;
+    margin-bottom: auto;
+  }
+}

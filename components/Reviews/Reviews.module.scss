@@ -1,0 +1,18 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.reviews {
+  padding: 5rem 2rem;
+  background-color: $grey-bg;
+
+  &_title {
+    @include sectionTitle;
+    margin-bottom: 2rem;
+  }
+
+  &_body {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 500px));
+    gap: 2rem;
+  }
+}

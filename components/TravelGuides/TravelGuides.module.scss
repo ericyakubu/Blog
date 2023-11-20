@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.section {
+  display: flex;
+  align-items: center;
+  height: 35rem;
+
+  &__img {
+    width: clamp(10rem, 40%, 35rem);
+    height: 100%;
+  }
+
+  &__main {
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 75, 95, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_body {
+      height: fit-content;
+      color: $text_white;
+
+      h2 {
+        font-size: 4rem;
+        font-weight: 900;
+        font-family: $titleFont;
+      }
+
+      p {
+        font-family: $mainFont;
+        font-size: 1.7rem;
+        font-weight: 200;
+        opacity: 0.8;
+        margin: 1rem 0 4rem;
+      }
+
+      a {
+        @include btnArrow;
+      }
+    }
+  }
+}

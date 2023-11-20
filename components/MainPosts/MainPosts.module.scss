@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+$article_height: 500px;
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  // flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.5rem 0.2rem;
+}
+
+// .row {
+//   display: grid;
+//   gap: 0.1rem;
+
+//   &__first {
+//     grid-template-columns: 1fr 2fr;
+
+//     @media (max-width: 915px) {
+//       grid-template-columns: 1fr 1.5fr;
+//     }
+//   }
+//   &__second {
+//     grid-template-columns: 2fr 1fr;
+//     @media (max-width: 915px) {
+//       grid-template-columns: 1.5fr 1fr;
+//     }
+//   }
+
+//   &__first,
+//   &__second {
+//     @media (max-width: 640px) {
+//       // grid-template-columns: 1fr 1fr;
+//       display: flex;
+//       flex-direction: column;
+//     }
+//     article {
+//       width: 100%;
+//       height: $article_height;
+//       overflow: hidden;
+//       img {
+//         width: 100%;
+//         height: $article_height;
+//       }
+//     }
+//   }
+// }

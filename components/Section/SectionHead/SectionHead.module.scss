@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 2rem 1.5rem;
+
+  &__title {
+    @include sectionTitle;
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    &_link {
+      font-size: 1.125rem;
+      color: $text_navy;
+      svg {
+        transform: translateX(0);
+      }
+      &:hover {
+        svg {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+
+  div,
+  a {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    height: fit-content;
+    font-family: $mainFont;
+  }
+
+  a {
+    margin-left: 0.5rem;
+    gap: 0.15rem;
+  }
+}
