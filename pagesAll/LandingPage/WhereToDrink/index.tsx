@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
 import classes from "./WhereToDrink.module.scss";
-import SectionHead from "../SectionHead";
 import Post from "./Post";
 import { SECTION_TYPE } from "@/types";
+import { SectionHead } from "@/components";
 
 interface Props {
   content: SECTION_TYPE;
