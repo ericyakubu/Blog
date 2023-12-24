@@ -6,7 +6,7 @@ import {
   Shop,
   TravelGuides,
 } from "@/components";
-import { LandingPage } from "@/pages";
+import { LandingPage } from "@/pagesAll";
 
 import { SECTIONS } from "@/constants";
 import { FunctionComponent } from "react";

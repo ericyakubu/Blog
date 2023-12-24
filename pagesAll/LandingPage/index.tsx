@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import { JoinUs } from "..";
 import Reviews from "./Reviews";
 import MainPosts from "./MainPosts";
 import TravelGuides from "./TravelGuides";
@@ -10,8 +9,9 @@ import WhereToDrink from "./WhereToDrink";
 import Guides from "./Guides";
 
 import { SECTION } from "./constants";
+import { JoinUs } from "@/components";
 
-const LandingPage = () => {
+const LandingPage: FunctionComponent = () => {
   return (
     <>
       <MainPosts />

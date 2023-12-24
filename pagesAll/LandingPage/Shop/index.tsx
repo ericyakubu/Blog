@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
 import classes from "./Shop.module.scss";
 import { SHOP_PRODUCTS } from "@/constants";
-import { Product, SectionHead } from "../..";
 import Link from "next/link";
+import { Product, SectionHead } from "@/components";
 
 const Shop: FunctionComponent = () => {
   const sectionInfo = {

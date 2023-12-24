@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import classes from "./Head.module.scss";
 
-const Head = () => {
+const Head: FunctionComponent = () => {
   return (
     <div className={classes.head}>
       <h3 className={classes.head_subtitle}>

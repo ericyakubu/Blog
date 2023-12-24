@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { FunctionComponent, useState } from "react";
 import classes from "./PostBody.module.scss";
 import { Links } from "@/components";
 import { SlOptionsVertical } from "react-icons/sl";

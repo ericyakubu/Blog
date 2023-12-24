@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { NeighbourhoodsPage } from "@/pages";
+import { NeighbourhoodsPage } from "@/pagesAll";
 
 const Neighbourhoods: FunctionComponent = () => {
   const content = {

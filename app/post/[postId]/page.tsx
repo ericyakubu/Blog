@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import { SamplePost } from "@/samples";
-import { PostPage } from "@/pages";
+import { PostPage } from "@/pagesAll";
 
 const Post: FunctionComponent = () => {
   return <PostPage post={SamplePost} />;
