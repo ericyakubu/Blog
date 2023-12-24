@@ -16,6 +16,7 @@
       font-size: 1.125rem;
       color: $navy;
       svg {
+        fill: $navy;
         transform: translateX(0);
       }
       &:hover {

@@ -1,7 +1,6 @@
 import { FunctionComponent } from "react";
 import classes from "./LogIn.module.scss";
-
-import { FaUserLarge } from "react-icons/fa6";
+import Icon from "../UI/Icon";
 
 interface Props {
   variant: "green" | "white";
@@ -12,13 +11,13 @@ const LogIn: FunctionComponent<Props> = ({ variant }) => {
 
   return (
     <button
-      className={`${classes.login} ${variant === "green" ? classes.green : ""}`}
+      className={`${classes.Login} ${variant === "green" ? classes.Green : ""}`}
     >
       {avatar && <img src="https://placehold.jp/30x30.png" alt="user avatar" />}
       {!avatar && (
-        <div>
-          <FaUserLarge />
-        </div>
+        <>
+          <Icon icon="User" size={"2rem"} />
+        </>
       )}
       <span>Log In</span>
     </button>

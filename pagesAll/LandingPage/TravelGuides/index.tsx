@@ -23,6 +23,7 @@ const TravelGuides: FunctionComponent = () => {
             Eat the Food.
           </h2>
           <p>Travel guides and inspiration</p>
+          {/* TODO create UI componet */}
           <Link href={`/post/tesdf`}>
             Start Exploring
             <FiArrowRight />

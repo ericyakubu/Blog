@@ -1,9 +1,8 @@
 import { FunctionComponent } from "react";
 import classes from "./Header.module.scss";
-import { FaFacebookF, FaInstagram, FaTwitter, FaVk } from "react-icons/fa";
-import { GiShoppingBag } from "react-icons/gi";
 import Link from "next/link";
 import { LogIn } from "..";
+import Icon from "../UI/Icon";
 
 const Header: FunctionComponent = () => {
   return (
@@ -14,16 +13,16 @@ const Header: FunctionComponent = () => {
         </li>
         <li>
           <a href="http://youtube" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
+            <Icon icon="Instagram" size={"0.8rem"} color="#fff" />
           </a>
           <a href="http://youtube" target="_blank" rel="noopener noreferrer">
-            <FaVk />
+            <Icon icon="Vkontakte" size={"0.8rem"} color="#fff" />
           </a>
           <a href="http://youtube" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF />
+            <Icon icon="Facebook-f" size={"0.8rem"} color="#fff" />
           </a>
           <a href="http://youtube" target="_blank" rel="noopener noreferrer">
-            <FaTwitter />
+            <Icon icon="Twitter" size={"0.8rem"} color="#fff" />
           </a>
         </li>
 
@@ -44,8 +43,8 @@ const Header: FunctionComponent = () => {
         <div className={classes.header_main_login}>
           <LogIn variant="green" />
           <button className={classes.header_main_login__shoppingBag}>
-            <GiShoppingBag />
-            <span>99</span>
+            <Icon icon="Shopping-bag" size={"2.25rem"} color="#114b5f" />
+            <span>0</span>
           </button>
         </div>
       </section>

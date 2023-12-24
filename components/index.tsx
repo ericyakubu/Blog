@@ -1,7 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import JoinUs from "./JoinUs";
-import TravelGuides from "./TravelGuides";
 import Links from "./Links";
 import LogIn from "./LogIn";
 
@@ -30,6 +29,5 @@ export {
   JoinUs,
   Reviews,
   Review,
-  TravelGuides,
   Shop,
 };

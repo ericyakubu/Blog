@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import classes from "./SectionHead.module.scss";
 import Link from "next/link";
-import { RiArrowRightDoubleFill } from "react-icons/ri";
+import Icon from "@/components/UI/Icon";
 interface Props {
   title: string;
   subtitle: string;
@@ -23,7 +23,7 @@ const SectionHead: FunctionComponent<Props> = ({
         {subtitle}
         <Link href={sectionLink.link} className={classes.head__subtitle_link}>
           <span>{sectionLink.title}</span>
-          <RiArrowRightDoubleFill />
+          <Icon icon="Chevron-double-right" size={"0.75rem"} />
         </Link>
       </div>
     </div>

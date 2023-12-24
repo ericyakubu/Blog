@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
 import classes from "./JoinUs.module.scss";
-import { FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
+import Icon from "../UI/Icon";
 interface Props {
   content?: {
     microtitle: string;
@@ -42,12 +42,13 @@ const JoinUs: FunctionComponent<Props> = ({ content }) => {
             {general.subtitle}
           </span>
         )}
+        {/* TODO create UI componet */}
         <Link
           href={`/post/tesdf`}
           className={content?.color === `dark` ? classes.dark : ``}
         >
           Join Us
-          <FiArrowRight />
+          <Icon icon="Arrow-right" size={"1rem"} color="#fff" />
         </Link>
       </div>
       <div className={classes.img}>

@@ -1,5 +1,3 @@
-import { FaFacebookF } from "react-icons/fa";
-
 export const SamplePost = {
   title: `Post title`,
   subtitle: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus ducimus sequi dolorem nesciunt officia hic. Dolor, ipsam commodi temporibus cum dolores fugiat neque voluptas doloribus voluptatem in a saepe.`,

@@ -2,9 +2,8 @@
 import { FunctionComponent, useState } from "react";
 import classes from "./PostBody.module.scss";
 import { Links } from "@/components";
-import { SlOptionsVertical } from "react-icons/sl";
-import { PiShareFatLight } from "react-icons/pi";
 import OutsideClickHandler from "react-outside-click-handler";
+import Icon from "@/components/UI/Icon";
 
 interface Props {
   post: {
@@ -42,12 +41,12 @@ const PostBody: FunctionComponent<Props> = ({ post }) => {
             className={classes.post_head__inner_bullets}
             onClick={toggleShare}
           >
-            <SlOptionsVertical />
+            <Icon icon="Options-vertical" size={"0.9rem"} />
           </button>
           {shareShow && (
             <OutsideClickHandler onOutsideClick={outsideClick}>
               <button className={classes.post_head__inner_share}>
-                <PiShareFatLight />
+                <Icon icon="Arrow-forward" size={"1rem"} />
                 <span>Share Post</span>
               </button>
             </OutsideClickHandler>
