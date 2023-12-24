@@ -1,10 +1,10 @@
-import React from "react";
+import { FunctionComponent } from "react";
 import classes from "./Shop.module.scss";
 import { SHOP_PRODUCTS } from "@/constants";
 import { Product, SectionHead } from "..";
 import Link from "next/link";
 
-const Shop: React.FC = () => {
+const Shop: FunctionComponent = () => {
   const sectionInfo = {
     title: `Shop for Swag`,
     subtitle: "",

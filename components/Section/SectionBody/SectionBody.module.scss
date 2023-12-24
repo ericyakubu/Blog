@@ -2,11 +2,16 @@
 @import "../../../styles/mixins.scss";
 
 .main {
-  padding: 0 2rem;
+  padding: 0 $pagePadding;
   width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 1rem;
+
+  &.large {
+    justify-content: space-between;
+    gap: 0;
+  }
 }

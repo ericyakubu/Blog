@@ -1,9 +1,4 @@
-import {
-  MAIN_POSTS_TYPE,
-  POST_TYPE,
-  PRODUCT_TYPE,
-  SECTION_TYPE,
-} from "./types";
+import { POST_TYPE, PRODUCT_TYPE, SECTION_TYPE } from "./types";
 
 export const MAIN_POSTS = [
   {
@@ -11,10 +6,10 @@ export const MAIN_POSTS = [
     title: "8 new openings in Dublin and 4 coming soon",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae nesciunt animi earum deserunt asperiores fugit laboriosam! Sunt ipsum quis omnis accusantium labore? Exercitationem quaerat dignissimos quas repellendus suscipit praesentium. Incidunt rerum dolore ut asperiores aspernatur magni reprehenderit, illum excepturi et sint porro delectus earum animi, obcaecati eos cum vel accusantium accusamus saepe. Minima aspernatur nobis, voluptatem tempora provident repellendus.",
-    img: "https://placehold.jp/500x300.png",
+    img: "/assets/food_1.jpg",
   },
   {
-    title: "Where to eat & drink near you",
+    title: "Where to\nEat &\nDrink\nNear you",
     subtitle: "All the Food",
   },
   {
@@ -22,14 +17,14 @@ export const MAIN_POSTS = [
     title: "8 new openings in Dublin and 4 coming soon",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae nesciunt animi earum deserunt asperiores fugit laboriosam! Sunt ipsum quis omnis accusantium labore? Exercitationem quaerat dignissimos quas repellendus suscipit praesentium. Incidunt rerum dolore ut asperiores aspernatur magni reprehenderit, illum excepturi et sint porro delectus earum animi, obcaecati eos cum vel accusantium accusamus saepe. Minima aspernatur nobis, voluptatem tempora provident repellendus.",
-    img: "https://placehold.jp/500x300.png",
+    img: "/assets/food_1.jpg",
   },
   {
     id: "113f",
     title: "8 new openings in Dublin and 4 coming soon",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae nesciunt animi earum deserunt asperiores fugit laboriosam! Sunt ipsum quis omnis accusantium labore? Exercitationem quaerat dignissimos quas repellendus suscipit praesentium. Incidunt rerum dolore ut asperiores aspernatur magni reprehenderit, illum excepturi et sint porro delectus earum animi, obcaecati eos cum vel accusantium accusamus saepe. Minima aspernatur nobis, voluptatem tempora provident repellendus.",
-    img: "https://placehold.jp/500x300.png",
+    img: "/assets/food_1.jpg",
   },
 ];
 
@@ -38,7 +33,7 @@ export const TEST_POSTS: POST_TYPE[] = [
     id: "12f32e",
     title: "Post Title",
     images: {
-      main: "https://placehold.jp/250x150.png",
+      main: "/assets/food_2.jpg",
     },
     author: "Mudala Aladum",
     publish_date: Date.now(),
@@ -50,7 +45,7 @@ export const TEST_POSTS: POST_TYPE[] = [
   {
     title: "Post Title",
     images: {
-      main: "https://placehold.jp/250x150.png",
+      main: "/assets/food_2.jpg",
     },
     author: "Mudala Aladum",
     publish_date: Date.now(),
@@ -62,7 +57,7 @@ export const TEST_POSTS: POST_TYPE[] = [
   {
     title: "Post Title",
     images: {
-      main: "https://placehold.jp/250x150.png",
+      main: "/assets/food_2.jpg",
     },
     author: "Mudala Aladum",
     publish_date: Date.now(),
@@ -74,7 +69,7 @@ export const TEST_POSTS: POST_TYPE[] = [
   {
     title: "Post Title",
     images: {
-      main: "https://placehold.jp/250x150.png",
+      main: "/assets/food_2.jpg",
     },
     author: "Mudala Aladum",
     publish_date: Date.now(),
@@ -87,51 +82,51 @@ export const TEST_POSTS: POST_TYPE[] = [
 
 export const SHOP_PRODUCTS: PRODUCT_TYPE[] = [
   {
-    name: `Random name`,
+    name: `Product name`,
     price: 123.23,
-    image: `https://placehold.jp/350x350.png`,
+    image: `/assets/food_4.jpg`,
     new: true,
     description: `Product description goes here`,
   },
   {
-    name: `Random name`,
+    name: `Product name`,
     price: 123.23,
-    image: `https://placehold.jp/350x350.png`,
+    image: `/assets/food_4.jpg`,
     new: true,
     description: `Product description goes here`,
   },
   {
-    name: `Random name`,
+    name: `Product name`,
     price: 123.23,
-    image: `https://placehold.jp/350x350.png`,
+    image: `/assets/food_4.jpg`,
     new: true,
     description: `Product description goes here`,
   },
   {
-    name: `Random name`,
+    name: `Product name`,
     price: 123.23,
-    image: `https://placehold.jp/350x350.png`,
+    image: `/assets/food_4.jpg`,
     new: true,
     description: `Product description goes here`,
   },
   {
-    name: `Random name`,
+    name: `Product name`,
     price: 123.23,
-    image: `https://placehold.jp/350x350.png`,
+    image: `/assets/food_4.jpg`,
     new: true,
     description: `Product description goes here`,
   },
   {
-    name: `Random name`,
+    name: `Product name`,
     price: 123.23,
-    image: `https://placehold.jp/350x350.png`,
+    image: `/assets/food_4.jpg`,
     new: true,
     description: `Product description goes here`,
   },
   {
-    name: `Random name`,
+    name: `Product name`,
     price: 123.23,
-    image: `https://placehold.jp/350x350.png`,
+    image: `/assets/food_4.jpg`,
     new: true,
     description: `Product description goes here`,
   },
@@ -150,7 +145,7 @@ export const SECTIONS: SECTION_TYPE[] = [
         id: "12f32e",
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -162,7 +157,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -174,7 +169,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -186,7 +181,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -208,7 +203,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -220,7 +215,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -232,7 +227,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -254,7 +249,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -266,7 +261,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -288,7 +283,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -300,7 +295,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),
@@ -312,7 +307,7 @@ export const SECTIONS: SECTION_TYPE[] = [
       {
         title: "Post Title",
         images: {
-          main: "https://placehold.jp/250x150.png",
+          main: "/assets/food_2.jpg",
         },
         author: "Mudala Aladum",
         publish_date: Date.now(),

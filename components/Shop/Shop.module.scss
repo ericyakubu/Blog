@@ -6,12 +6,12 @@
   background: $grey-bg;
 
   &__main {
-    padding: 0 2rem;
+    padding: 0 $pagePadding;
     width: 100%;
 
     &_inside {
       display: flex;
-      gap: 1rem;
+      gap: $pagePadding;
       width: 100%;
       overflow-x: auto;
     }

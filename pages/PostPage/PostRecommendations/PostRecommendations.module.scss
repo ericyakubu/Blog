@@ -1,0 +1,12 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.recommendations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 90vw;
+  max-width: 940px;
+  margin: 0 auto 3rem;
+}

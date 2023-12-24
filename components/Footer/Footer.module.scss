@@ -3,9 +3,9 @@
 
 .footer {
   margin-top: auto;
-  padding: 3rem 2rem;
+  padding: 3rem $pagePadding;
   display: flex;
-  color: $text_grey;
+  color: $grey;
   justify-content: space-between;
   text-align: center;
   background: $grey-bg;
@@ -40,7 +40,7 @@
   &__creator {
     text-align: right;
     a {
-      border-bottom: 1px solid $text_grey;
+      border-bottom: $border-grey;
     }
   }
 }

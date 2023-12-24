@@ -1,0 +1,40 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.section {
+  padding: 5rem $pagePadding;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.75fr 1fr 1fr 1fr;
+  background: $grey-bg;
+
+  h2 {
+    margin-top: 2rem;
+    @include title(3rem);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    li {
+      display: flex;
+      @include styleText(1rem, 300, $titleFont);
+
+      &:first-of-type {
+        @include styleText(1.25rem, 600, $secondaryFont);
+        color: $navy;
+      }
+
+      a {
+        padding: 1rem 0;
+        background: $navy;
+        text-align: center;
+        color: $white;
+        line-height: 1;
+        width: 100%;
+      }
+    }
+  }
+}

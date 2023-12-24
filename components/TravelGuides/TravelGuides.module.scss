@@ -7,8 +7,9 @@
   height: 35rem;
 
   &__img {
-    width: clamp(10rem, 40%, 35rem);
+    width: clamp(25rem, 40%, 45rem);
     height: 100%;
+    object-fit: cover;
   }
 
   &__main {
@@ -21,18 +22,14 @@
 
     &_body {
       height: fit-content;
-      color: $text_white;
+      color: $white;
 
       h2 {
-        font-size: 4rem;
-        font-weight: 900;
-        font-family: $titleFont;
+        @include title(4rem);
       }
 
       p {
-        font-family: $mainFont;
-        font-size: 1.7rem;
-        font-weight: 200;
+        @include styleText(1.7rem, 200, $mainFont);
         opacity: 0.8;
         margin: 1rem 0 4rem;
       }

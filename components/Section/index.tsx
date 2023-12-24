@@ -1,14 +1,17 @@
 import { SECTION_TYPE } from "@/types";
-import React from "react";
+import { FunctionComponent } from "react";
 import classes from "./Section.module.scss";
+import SectionHead from "./SectionHead";
+import SectionBody from "./SectionBody";
 
-import { SectionBody, SectionHead } from "..";
 interface Props {
   section: SECTION_TYPE;
   grey?: boolean;
+  size?: "small" | "large";
 }
 
-const Section: React.FC<Props> = ({ section, grey }) => {
+const Section: FunctionComponent<Props> = ({ section, grey, size }) => {
+  // FIXME add variations to sections
   return (
     <section className={grey ? classes.grey : ""}>
       <SectionHead
@@ -16,7 +19,7 @@ const Section: React.FC<Props> = ({ section, grey }) => {
         subtitle={section.subtitle}
         sectionLink={section.sectionLink}
       />
-      <SectionBody posts={section.posts} />
+      <SectionBody posts={section.posts} size={size} />
     </section>
   );
 };

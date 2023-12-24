@@ -1,0 +1,21 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
+.product {
+  min-width: calc((100vw - $pagePadding * 5) / 4);
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: calc((100vw - $pagePadding * 5) / 4);
+  }
+
+  h4 {
+    margin: 1rem 0 0;
+    @include styleText(1rem, 500, $titleFont);
+  }
+
+  span {
+    @include styleText(1rem, 100, $mainFont);
+  }
+}

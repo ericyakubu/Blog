@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.section {
+  padding: 5rem 0;
+  background: $grey-bg;
+
+  &__main {
+    padding: 0 $pagePadding;
+    width: 100%;
+
+    &_inside {
+      display: flex;
+      gap: $pagePadding;
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+}

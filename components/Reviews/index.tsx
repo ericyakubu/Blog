@@ -1,8 +1,8 @@
-import React from "react";
+import { FunctionComponent } from "react";
 import classes from "./Reviews.module.scss";
 import { Review } from "..";
 
-const Reviews: React.FC = () => {
+const Reviews: FunctionComponent = () => {
   return (
     <div className={classes.reviews}>
       <h2 className={classes.reviews_title}>Recent Reviews</h2>

@@ -1,0 +1,13 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.main {
+  padding: 0 $pagePadding;
+  width: 100%;
+  background: $grey-bg;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}

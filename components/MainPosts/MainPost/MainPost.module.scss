@@ -3,15 +3,15 @@
 
 .small,
 .big {
-  height: 500px;
+  height: 32rem;
 }
 
 .small {
-  width: calc(33.5% - 0.05rem);
+  width: calc(42.5% - 0.05rem);
 }
 
 .big {
-  width: calc(66.5% - 0.05rem);
+  width: calc(57.5% - 0.05rem);
 }
 
 .aside,
@@ -22,22 +22,32 @@
     @include styleText(1.1rem, 300, $mainFont);
   }
   h2 {
-    @include styleText(4rem, 900, $titleFont);
+    @include title(4rem);
   }
 }
 
 .aside {
-  background: skyblue;
+  background: $navy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p,
+  h2 {
+    width: 77.5%;
+    margin-left: auto;
+    color: $white;
+    text-align: left;
+  }
 
   p {
-    margin-top: 4.5rem;
+    margin-top: 4rem;
     @include styleText(1.125rem, 300, $mainFont);
-    color: $text_white;
   }
 
   h2 {
-    @include styleText(4rem, 900, $titleFont);
-    color: $text_white;
+    @include title(4.25rem);
+    margin-bottom: 0;
   }
 }
 
@@ -46,13 +56,23 @@
   z-index: 10;
 
   img {
-    z-index: -1;
+    z-index: -2;
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     top: 0;
     left: 0;
+  }
+  &:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    left: 0;
+    top: 0;
   }
 
   .btn {
@@ -83,12 +103,12 @@
   h2 {
     margin-top: 9rem;
     @include styleText(2.25rem, 900, $titleFont);
-    color: $text_white;
+    color: $white;
   }
 
   p {
     margin-top: 1.5rem;
-    color: $text_lightBlue;
+    color: $lightBlue;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Number of lines to show */
     -webkit-box-orient: vertical;

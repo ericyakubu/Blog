@@ -1,0 +1,119 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
+.small,
+.big {
+  height: 32rem;
+}
+
+.small {
+  width: calc(42.5% - 0.05rem);
+}
+
+.big {
+  width: calc(57.5% - 0.05rem);
+}
+
+.aside,
+.article {
+  position: relative;
+  padding: 0 2.5rem;
+  p {
+    @include styleText(1.1rem, 300, $mainFont);
+  }
+  h2 {
+    @include title(4rem);
+  }
+}
+
+.aside {
+  background: $navy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p,
+  h2 {
+    width: 77.5%;
+    margin-left: auto;
+    color: $white;
+    text-align: left;
+  }
+
+  p {
+    margin-top: 4rem;
+    @include styleText(1.125rem, 300, $mainFont);
+  }
+
+  h2 {
+    @include title(4.25rem);
+    margin-bottom: 0;
+  }
+}
+
+.article {
+  position: relative;
+  z-index: 10;
+
+  img {
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    left: 0;
+    top: 0;
+  }
+
+  .btn {
+    &_news,
+    &_read {
+      @include btnArrow();
+      width: fit-content;
+      height: fit-content;
+      padding: 0.5rem 3rem;
+    }
+    &_news {
+      z-index: +1;
+      position: absolute;
+      top: 2.25rem;
+      left: 2.5rem;
+    }
+    &_read {
+      margin-top: 1.5rem;
+      @include styleText(1.125rem, 400, $mainFont);
+    }
+  }
+
+  p,
+  h2 {
+    max-width: 31.25rem;
+  }
+
+  h2 {
+    margin-top: 9rem;
+    @include styleText(2.25rem, 900, $titleFont);
+    color: $white;
+  }
+
+  p {
+    margin-top: 1.5rem;
+    color: $lightBlue;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+}

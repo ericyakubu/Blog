@@ -2,7 +2,9 @@
 @import "../../../styles/mixins.scss";
 
 .review {
+  width: calc((100vw - $pagePadding * 5) / 4);
   img {
+    height: calc((100vw - $pagePadding * 5) / 4);
     width: 100%;
   }
 

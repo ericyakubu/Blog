@@ -1,36 +1,33 @@
 import {
-  AllTheFood,
-  BecomeInsider,
   JoinUs,
   MainPosts,
   Reviews,
   Section,
   Shop,
-  StayInTouch,
   TravelGuides,
 } from "@/components";
+import { LandingPage } from "@/pages";
 
 import { SECTIONS } from "@/constants";
+import { FunctionComponent } from "react";
 
-export default function Home() {
+const Home: FunctionComponent = () => {
   return (
-    <div>
+    <>
+      {/* <>
       <MainPosts />
       <Section section={SECTIONS[0]} />
-
       <JoinUs />
-      <Section section={SECTIONS[1]} />
-
+      <Section section={SECTIONS[1]} /> 
       <Reviews />
-      <Section section={SECTIONS[2]} grey={true} />
-
+      <Section section={SECTIONS[2]} grey={true} size={"large"} />
       <TravelGuides />
-      <Section section={SECTIONS[3]} />
-
+      <Section section={SECTIONS[3]} /> 
       <Shop />
-      <StayInTouch />
-      <BecomeInsider />
-      <AllTheFood />
-    </div>
+    </> */}
+      <LandingPage />
+    </>
   );
-}
+};
+
+export default Home;

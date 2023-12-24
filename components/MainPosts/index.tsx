@@ -1,9 +1,9 @@
-import React from "react";
+import { FunctionComponent } from "react";
 import classes from "./MainPosts.module.scss";
 import { MAIN_POSTS } from "@/constants";
 import { MainPost } from "..";
 
-const MainPosts: React.FC = () => {
+const MainPosts: FunctionComponent = () => {
   // const row1 = MAIN_POSTS.slice(0, 2);
   // const row2 = MAIN_POSTS.slice(-2);
   return (

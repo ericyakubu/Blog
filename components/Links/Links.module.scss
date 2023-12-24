@@ -1,2 +1,17 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
+
+.links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  gap: 1.5rem;
+  border-top: $border-grey;
+
+  :last-child {
+    margin-left: auto;
+    @include styleText(1.1rem, 200, $mainFont);
+  }
+}

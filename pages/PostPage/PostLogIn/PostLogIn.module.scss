@@ -1,0 +1,21 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.post_login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5rem $pagePadding;
+  margin-bottom: 3.5rem;
+  background: url("/assets/moscow.png") center / cover no-repeat;
+
+  &__title {
+    @include title(1.5rem);
+    color: $white;
+    margin-bottom: 0;
+
+    span {
+      color: $lightGreen;
+    }
+  }
+}

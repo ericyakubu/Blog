@@ -1,0 +1,112 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.post {
+  @include postBlock;
+  margin-bottom: 1rem;
+
+  &_head {
+    display: flex;
+    margin-bottom: 1.75rem;
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      @include styleText(0.9rem, 200, $mainFont);
+      &:last-of-type {
+        margin-left: auto;
+      }
+      &:not(:last-of-type, :first-of-type) {
+        &::before {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 2px;
+          background: black;
+          margin: 0 0.5rem;
+        }
+      }
+
+      &_options {
+        position: relative;
+      }
+
+      &_share {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        min-width: fit-content;
+        padding: 1rem 1rem 1rem 1.5rem;
+        z-index: 100;
+        bottom: 0;
+        left: 0;
+        transform: translate(-101%, 100%);
+        box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+        font-size: 1rem;
+        span {
+          @include styleText(1rem, 300, $titleFont);
+          width: 8rem;
+          padding-left: 1rem;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &_title {
+    @include title(2.25rem);
+  }
+
+  &_subtitle {
+    @include styleText(1.15rem, 200, $mainFont);
+  }
+
+  &_coverImg {
+    max-width: 100%;
+    display: flex;
+    margin: 3rem auto;
+  }
+
+  &_section {
+    &__title {
+      @include title(1.25rem);
+      margin-bottom: 2rem;
+    }
+
+    &__content {
+      @include styleText(1.15rem, 200, $mainFont);
+    }
+
+    &__images {
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 3rem;
+    }
+  }
+
+  &_tags {
+    margin: 3rem 0 1.5rem;
+
+    &__title {
+      margin-bottom: 0.4rem;
+      @include styleText(1.1rem, 200, $mainFont);
+    }
+
+    &__list {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &_item {
+        @include styleText(0.9rem, 300, $mainFont);
+        color: $white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 2rem;
+        background: $navy;
+      }
+    }
+  }
+}
