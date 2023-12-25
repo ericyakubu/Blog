@@ -52,8 +52,6 @@
   }
 
   a {
-    @include btnArrow;
-
     &.dark {
       background: $darkBlueAlt;
     }

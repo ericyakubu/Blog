@@ -7,11 +7,6 @@ const PostComments: FunctionComponent = () => {
     <div className={classes.comments}>
       <h2 className={classes.comments_title}>Comments</h2>
       <form action="" className={classes.comments_form}>
-        {/* <input
-          type="text"
-          placeholder="Write a comment..."
-          className={classes.comments_form__input}
-        /> */}
         {/* TODO add functionality to textfield (links, images) */}
         <textarea
           name=""

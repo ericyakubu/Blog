@@ -1,4 +1,4 @@
-export type IconNames =
+type IconNames =
   | "Instagram"
   | "Facebook-f"
   | "Vkontakte"
@@ -15,3 +15,5 @@ export type IconNames =
   | "Arrow-forward"
   | "Link"
   | "Options-vertical";
+
+export default IconNames;

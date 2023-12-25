@@ -1,8 +1,7 @@
 import { FunctionComponent } from "react";
 import classes from "./JoinUs.module.scss";
 import Image from "next/image";
-import Link from "next/link";
-import Icon from "../UI/Icon";
+import Button from "../UI/Button";
 interface Props {
   content?: {
     microtitle: string;
@@ -42,14 +41,16 @@ const JoinUs: FunctionComponent<Props> = ({ content }) => {
             {general.subtitle}
           </span>
         )}
-        {/* TODO create UI componet */}
-        <Link
-          href={`/post/tesdf`}
-          className={content?.color === `dark` ? classes.dark : ``}
-        >
-          Join Us
-          <Icon icon="Arrow-right" size={"1rem"} color="#fff" />
-        </Link>
+        <Button
+          type="link"
+          text="Join Us"
+          icon="Arrow-right"
+          iconSize="1rem"
+          link="/post/tfds"
+          animated
+          background="transparent-dark"
+          size="medium"
+        />
       </div>
       <div className={classes.img}>
         <Image

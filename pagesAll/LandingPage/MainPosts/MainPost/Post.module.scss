@@ -76,13 +76,6 @@
   }
 
   .btn {
-    &_news,
-    &_read {
-      @include btnArrow();
-      width: fit-content;
-      height: fit-content;
-      padding: 0.5rem 3rem;
-    }
     &_news {
       z-index: +1;
       position: absolute;
@@ -91,7 +84,7 @@
     }
     &_read {
       margin-top: 1.5rem;
-      @include styleText(1.125rem, 400, $mainFont);
+      @include styleText(1.125rem, 300, $mainFont);
     }
   }
 

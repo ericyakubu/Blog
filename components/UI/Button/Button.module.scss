@@ -1,0 +1,98 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.Button {
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: $mainFont;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 3rem;
+  color: $white;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5rem;
+  white-space: nowrap;
+
+  svg {
+    margin-left: 0.5rem;
+    fill: $white;
+  }
+
+  &_small {
+    width: 155px;
+    padding: 0 25px;
+    height: 35px;
+    font-size: 11px;
+  }
+
+  &_medium {
+    width: 210px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  &_large {
+    width: 275px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+  &_background {
+    &_greenWhite {
+      background: $navy;
+
+      &:hover {
+        border-color: $darkGreen;
+        color: $darkGreen;
+        background: rgba(255, 255, 255, 0.25);
+        svg {
+          fill: $darkGreen;
+        }
+      }
+    }
+
+    &_transparent {
+      background: rgba(255, 255, 255, 0.1);
+      &:hover {
+        border-color: rgba(171, 204, 215, 0.85);
+        color: $darkGreen;
+        background: rgba(171, 204, 215, 0.85);
+        svg {
+          fill: $darkGreen;
+        }
+      }
+    }
+
+    &_transparentAlt {
+      &:hover {
+        border-color: $blueAlt;
+        color: $blueAlt;
+        background: rgb(171, 204, 215);
+        svg {
+          fill: $blueAlt;
+        }
+      }
+    }
+
+    &_transparentDark {
+      background: rgba(0, 0, 0, 0.25);
+      &:hover {
+        border-color: $darkGreen;
+        color: $darkGreen;
+        background: rgb(171, 204, 215);
+        svg {
+          fill: $darkGreen;
+        }
+      }
+    }
+  }
+
+  &_animated {
+    &:hover {
+      letter-spacing: 0.15em;
+    }
+  }
+}

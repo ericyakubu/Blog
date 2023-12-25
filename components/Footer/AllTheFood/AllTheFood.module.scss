@@ -22,6 +22,13 @@
       display: flex;
       @include styleText(1rem, 300, $titleFont);
 
+      &:not(:first-of-type) {
+        &:hover {
+          color: $navy;
+          cursor: pointer;
+        }
+      }
+
       &:first-of-type {
         @include styleText(1.25rem, 600, $secondaryFont);
         color: $navy;
@@ -34,6 +41,12 @@
         color: $white;
         line-height: 1;
         width: 100%;
+
+        &:hover {
+          color: $navy;
+          background: rgba(22, 224, 194, 0.15);
+          cursor: pointer;
+        }
       }
     }
   }

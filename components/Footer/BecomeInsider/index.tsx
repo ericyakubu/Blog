@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import classes from "./Insider.module.scss";
-import Link from "next/link";
+import Button from "@/components/UI/Button";
 
 const BecomeInsider: FunctionComponent = () => {
   return (
@@ -11,7 +11,14 @@ const BecomeInsider: FunctionComponent = () => {
           Get access to the best restaurants, bars, and food Dublin has to
           offer.
         </p>
-        <Link href={`/post/234`}>Join ATF Insiders</Link>
+        {/* TODO slight style change needed */}
+        <Button
+          type="link"
+          text="Join ATF Insiders"
+          link="/post/tfds"
+          background="transparent-dark"
+          size="medium"
+        />
       </div>
       <img src="https://placehold.jp/350x350.png" alt="" />
     </section>

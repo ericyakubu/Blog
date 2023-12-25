@@ -1,8 +1,7 @@
 import { FunctionComponent } from "react";
 import classes from "./TravelGuides.module.scss";
-import Link from "next/link";
-import { FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
+import Button from "@/components/UI/Button";
 
 const TravelGuides: FunctionComponent = () => {
   return (
@@ -23,11 +22,16 @@ const TravelGuides: FunctionComponent = () => {
             Eat the Food.
           </h2>
           <p>Travel guides and inspiration</p>
-          {/* TODO create UI componet */}
-          <Link href={`/post/tesdf`}>
-            Start Exploring
-            <FiArrowRight />
-          </Link>
+          <Button
+            type="link"
+            text="Start Exploring"
+            icon="Arrow-right"
+            iconSize="1rem"
+            link="/post/tfds"
+            animated
+            background="transparent-alt"
+            size="large"
+          />
         </div>
       </div>
     </section>
