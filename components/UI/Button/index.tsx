@@ -1,7 +1,7 @@
 import Link from "next/link";
 import cn from "classnames";
 import { FunctionComponent } from "react";
-import Icon from "../Icon";
+import { Icon } from "../index";
 import classes from "./Button.module.scss";
 import IconNames from "../Icon/Icon.type";
 import { MouseEvent } from "react";

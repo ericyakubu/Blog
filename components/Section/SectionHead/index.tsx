@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import classes from "./SectionHead.module.scss";
 import Link from "next/link";
-import Icon from "@/components/UI/Icon";
+import { Icon } from "@/components/UI";
 interface Props {
   title: string;
   subtitle: string;

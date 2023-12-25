@@ -3,7 +3,7 @@ import classes from "./Footer.module.scss";
 import StayInTouch from "./StayInTouch";
 import BecomeInsider from "./BecomeInsider";
 import AllTheFood from "./AllTheFood";
-import Icon from "../UI/Icon";
+import { Icon } from "../UI";
 
 const Footer: FunctionComponent = () => {
   return (

@@ -3,7 +3,7 @@ import { FunctionComponent, useState } from "react";
 import classes from "./PostBody.module.scss";
 import { Links } from "@/components";
 import OutsideClickHandler from "react-outside-click-handler";
-import Icon from "@/components/UI/Icon";
+import { Icon } from "@/components/UI";
 
 interface Props {
   post: {

@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import classes from "./Links.module.scss";
-import Icon from "../UI/Icon";
+import { Icon } from "../UI";
 
 const Links: FunctionComponent = () => {
   return (

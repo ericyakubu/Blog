@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import classes from "./Post.module.scss";
 import Image from "next/image";
-import Button from "@/components/UI/Button";
+import { Button } from "@/components/UI";
 
 interface Props {
   post: any;

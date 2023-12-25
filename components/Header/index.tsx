@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import classes from "./Header.module.scss";
 import Link from "next/link";
 import { LogIn } from "..";
-import Icon from "../UI/Icon";
+import { Icon } from "../UI";
 
 const Header: FunctionComponent = () => {
   return (

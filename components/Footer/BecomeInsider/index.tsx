@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import classes from "./Insider.module.scss";
-import Button from "@/components/UI/Button";
+import { Button } from "@/components/UI";
 
 const BecomeInsider: FunctionComponent = () => {
   return (

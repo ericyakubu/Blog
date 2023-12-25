@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import classes from "./LogIn.module.scss";
-import Icon from "../UI/Icon";
+import { Icon } from "../UI";
 
 interface Props {
   variant: "green" | "white";
