@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import Head from "./Head";
 import Locations from "./Locations";
-import { Description, JoinUs } from "@/components";
+import { Description } from "@/components";
 
 interface Props {
   content: {
@@ -10,7 +10,7 @@ interface Props {
   };
 }
 
-const NeighbourhoodsPage: FunctionComponent<Props> = ({ content }) => {
+const NeighbourhoodPage: FunctionComponent<Props> = ({ content }) => {
   const content1 = {
     microtitle: `Join ATF Insiders`,
     title: "Make the Most\nof Every Meal",
@@ -24,10 +24,9 @@ const NeighbourhoodsPage: FunctionComponent<Props> = ({ content }) => {
       <Head />
       <Description content={content} />
       <Locations />
-      {/* FIXME idk wtf the problem is, needs to be fixed */}
-      <JoinUs content={content1} />
+      {/* TODO add google map here */}
     </>
   );
 };
 
-export default NeighbourhoodsPage;
+export default NeighbourhoodPage;

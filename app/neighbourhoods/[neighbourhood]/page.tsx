@@ -1,12 +1,12 @@
 import { FunctionComponent } from "react";
-import { NeighbourhoodsPage } from "@/pagesAll";
+import { NeighbourhoodPage } from "@/pagesAll";
 
 const Neighbourhood: FunctionComponent = () => {
   const content = {
-    title: `Selected Location`,
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, consectetur quibusdam veritatis molestiae voluptas hic, officia voluptatem tenetur ad, quod neque ea nobis odio facere illo tempore. Cum, voluptatum quas?\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptate magni molestiae similique quisquam natus quod? Quiaiste dicta neque optio culpa enim nam at error blanditiis ex, nemoconsequuntur. Architecto, quisquam commodi. Itaque eveniet quipraesentium quia quae, veritatis a harum maiores quis.`,
+    title: `Our Take`,
+    description: `Just south of the city centre, bordered by the Grand Canal, head to Portobello for café culture, Michelin-recommended dinners, and homemade pasta.`,
   };
-  return <NeighbourhoodsPage content={content} />;
+  return <NeighbourhoodPage content={content} />;
 };
 
 export default Neighbourhood;

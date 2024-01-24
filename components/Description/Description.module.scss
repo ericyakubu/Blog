@@ -1,0 +1,29 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.description {
+  display: flex;
+  align-items: center;
+  gap: calc((100% - 850px) * 0.25);
+  padding: 4rem $pagePadding $sectionGap;
+
+  &_image {
+    width: 35vw;
+    max-width: 750px;
+    height: 525px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &_main {
+    width: 525px;
+
+    h2 {
+      @include title(3rem);
+    }
+
+    p {
+      @include styleText(1.375rem, 200, $mainFont);
+    }
+  }
+}

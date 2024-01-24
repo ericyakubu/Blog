@@ -39,7 +39,9 @@ const Header: FunctionComponent = () => {
 
       <section className={classes.header_main}>
         <button className={classes.header_main_btn}>Join ATF Insiders</button>
-        <h1 className={classes.header_main_title}>all the food</h1>
+        <h1 className={classes.header_main_title}>
+          <Link href={`/`}>all the food</Link>
+        </h1>
         <div className={classes.header_main_login}>
           <LogIn variant="green" />
           <button className={classes.header_main_login__shoppingBag}>

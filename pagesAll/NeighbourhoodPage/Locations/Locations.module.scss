@@ -1,0 +1,16 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.container {
+  padding: 2rem $pagePadding 6rem;
+
+  .locations {
+    display: grid;
+    gap: $pagePadding;
+    grid-template-columns: repeat(4, minmax(12.5rem, 1fr));
+  }
+
+  h2 {
+    @include title(3rem);
+  }
+}

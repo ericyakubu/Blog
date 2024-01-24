@@ -14,8 +14,8 @@ const Description: FunctionComponent<Props> = ({ content }) => {
     <section className={classes.description}>
       <Image
         src={"/assets/maps.webp"}
-        width={450}
-        height={565}
+        width={600}
+        height={525}
         className={classes.description_image}
         alt="map"
       />

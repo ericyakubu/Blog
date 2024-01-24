@@ -105,3 +105,66 @@ export const SampleComments = [
     date: `Oct 23, 2023`,
   },
 ];
+
+export const SampleRestaurants = [
+  {
+    name: "147 Deli",
+    types: ["Sandwiches", "Cafe", "Portugese"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "3 Leaves",
+    types: ["Southern Indian"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "64 Wine",
+    types: ["Wine Bar", "Small Plates"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "Amuri",
+    types: ["Sicilian", "Argentinean"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "777",
+    types: ["Mexican"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "A Fianco",
+    types: ["Wine Bar", "Small Plates"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "Amy Austin",
+    types: ["Wine Bar"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "Ananda",
+    types: ["Northern Indian", "Southern Indian"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "A Do",
+    types: ["Indian", "Cafe"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "Aobaba",
+    types: ["Vietnamese"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "Aperitivo",
+    types: ["Italian"],
+    img: "/assets/random.jpg",
+  },
+  {
+    name: "Arty Baker",
+    types: ["Bakery", "Cafe"],
+    img: "/assets/random.jpg",
+  },
+];

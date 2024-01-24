@@ -1,0 +1,21 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.Restaurant {
+  margin-bottom: 10px;
+  &__image {
+    width: 315px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin: 16px 0 8px;
+    @include styleText(22px, 700, $titleFont);
+  }
+
+  &__types {
+    @include styleText(16px, 600, $titleFont);
+    color: $navy;
+  }
+}

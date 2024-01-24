@@ -4,12 +4,10 @@
 .head {
   text-align: center;
   background: url("/assets/lightbulbs.webp") center / cover no-repeat;
-  height: 275px;
+  height: 150px;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  padding: 0 $pagePadding;
   align-items: center;
-  justify-content: center;
   position: relative;
 
   ::after {
@@ -30,15 +28,10 @@
     z-index: +1;
   }
 
-  &_subtitle {
-    @include styleText(1.25rem, 300, $mainFont);
-    color: $navyAlt;
-    z-index: +1;
-  }
-
   &_title {
-    @include title(4rem);
+    @include title(2.75rem);
     color: $white;
     margin: 0;
+    text-transform: capitalize;
   }
 }

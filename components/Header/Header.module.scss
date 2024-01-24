@@ -35,7 +35,7 @@
 
   &_main {
     padding: 0 1rem;
-    height: 8.5rem;
+    height: 7.5rem;
     background: $white;
     border-bottom: 1px solid rgba(204, 207, 214, 0.3);
     display: grid;
@@ -49,6 +49,12 @@
       color: $white;
       @include styleText(1rem, 200, $mainFont);
       height: fit-content;
+
+      &:hover {
+        color: $navy;
+        background: rgba(22, 224, 194, 0.15);
+        cursor: pointer;
+      }
     }
 
     &_title {
