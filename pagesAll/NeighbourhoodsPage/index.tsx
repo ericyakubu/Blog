@@ -1,7 +1,8 @@
 import { FunctionComponent } from "react";
 import Head from "./Head";
+import Description from "./Description";
 import Locations from "./Locations";
-import { Description, JoinUs } from "@/components";
+import { JoinUs } from "@/components";
 
 interface Props {
   content: {
@@ -19,6 +20,7 @@ const NeighbourhoodsPage: FunctionComponent<Props> = ({ content }) => {
     size: "full",
   };
   // TODO make it dinamical for both /neighbourhoods and /neighbourhoods/[location]
+  // probably no need to break it into subfolders
   return (
     <>
       <Head />

@@ -6,15 +6,10 @@
     width: calc(calc(100vw - $pagePadding * 5) / 4);
     height: calc(calc(100vw - $pagePadding * 5) / 4);
     object-fit: cover;
-    transition: filter 0.5s ease-in-out;
-
-    &:hover {
-      filter: grayscale(100%);
-    }
   }
 
   h4 {
     margin: 0.75rem 0 1.5rem;
-    @include styleText(1.25rem, bold, $titleFont);
+    @include styleText(1.25rem, 700, $titleFont);
   }
 }

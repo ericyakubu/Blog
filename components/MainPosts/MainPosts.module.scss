@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+$article_height: 500px;
+
+// FIXME refactor
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.1rem;
+  padding: 0.5rem 0.2rem;
+}

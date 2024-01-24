@@ -3,7 +3,12 @@ import Header from "./Header";
 import JoinUs from "./JoinUs";
 import Links from "./Links";
 import LogIn from "./LogIn";
-import Description from "./Description";
+
+import MainPosts from "./MainPosts";
+import MainPost from "./MainPosts/MainPost";
+
+import Reviews from "./Reviews";
+import Review from "./Reviews/Review";
 
 import Shop from "./Shop";
 import Product from "./Shop/Product";
@@ -16,10 +21,13 @@ export {
   Footer,
   LogIn,
   Links,
-  Description,
   Section,
   SectionHead,
   Product,
+  MainPosts,
+  MainPost,
   JoinUs,
+  Reviews,
+  Review,
   Shop,
 };
